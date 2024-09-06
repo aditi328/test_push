@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of Artificial Intelligence</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Scope of Artificial Intelligence</h1>
+        <div class="boxes">
+            <div class="box" onclick="openModal('modalAgriculture')">
+                <h2>Agriculture</h2>
+                <p>AI has been increasingly applied in agriculture to enhance productivity, efficiency, and sustainability.</p>
+            </div>
+            <div class="box" onclick="openModal('modalSpace')">
+                <h2>Space Exploration</h2>
+                <p>AI in space exploration helps rovers navigate, analyze data, and make autonomous decisions.</p>
+            </div>
+            <div class="box" onclick="openModal('modalFashion')">
+                <h2>Fashion Design</h2>
+                <p>AI in fashion design creates unique styles by analyzing trends and generating new clothing patterns.</p>
+            </div>
+            <div class="box" onclick="openModal('modalEducation')">
+                <h2>Personalized Education</h2>
+                <p>AI in personalized education adapts learning content to each student's pace, strengths, and needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modalAgriculture" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalAgriculture')">&times;</span>
+            <h2>Agriculture</h2>
+            <p>More detailed information about AI applications in agriculture...</p>
+        </div>
+    </div>
+    
+    <div id="modalSpace" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalSpace')">&times;</span>
+            <h2>Space Exploration</h2>
+            <p>More detailed information about AI applications in space exploration...</p>
+        </div>
+    </div>
+
+    <div id="modalFashion" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalFashion')">&times;</span>
+            <h2>Fashion Design</h2>
+            <p>More detailed information about AI applications in fashion design...</p>
+        </div>
+    </div>
+
+    <div id="modalEducation" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalEducation')">&times;</span>
+            <h2>Personalized Education</h2>
+            <p>More detailed information about AI applications in personalized education...</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

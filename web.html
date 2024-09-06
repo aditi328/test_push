@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Website</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#what-we-do">What We Do</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#why-join-us">Why Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do" class="what-we-do">
+        <h2>What We Do</h2>
+        <div class="grid-container">
+            <!-- Example Card -->
+            <div class="card" onclick="showInfo('info1')">
+                <img src="guest_lecture.jpg" alt="Guest Lecture">
+                <div class="card-info">
+                    <h3>Guest Lecture</h3>
+                    <p>Learn from industry experts.</p>
+                </div>
+            </div>
+            <!-- Repeat for other sections -->
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <h2>Activities</h2>
+        <div class="activity-grid">
+            <button onclick="showActivityInfo('hackathon')">Hackathon</button>
+            <button onclick="showActivityInfo('activity2')">Activity 2</button>
+            <button onclick="showActivityInfo('activity3')">Activity 3</button>
+            <button onclick="showActivityInfo('activity4')">Activity 4</button>
+        </div>
+    </section>
+
+    <!-- Why Join Us Section -->
+    <section id="why-join-us" class="why-join-us">
+        <h2>Why Join Us</h2>
+        <div class="join-us-container">
+            <img src="community.jpg" alt="Community">
+            <ul>
+                <li onclick="showMoreInfo('reason1')">Reason 1</li>
+                <li onclick="showMoreInfo('reason2')">Reason 2</li>
+                <li onclick="showMoreInfo('reason3')">Reason 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Modals for Information -->
+    <div id="info1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('info1')">&times;</span>
+            <h2>Guest Lecture</h2>
+            <p>Details about the guest lecture...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>

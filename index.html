@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Fixed Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#scope-of-ai">Scope of AI</a></li>
+            <li><a href="#activity-page">Activity (Workshops & Guest Lectures)</a></li>
+            <li><a href="#all-projects">All Projects</a></li>
+            <li><a href="#why-join-us">Why Join Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Scope of AI Section -->
+        <section id="scope-of-ai">
+            <h1>Scope of AI</h1>
+            <div class="scope-container">
+                <div class="scope-box" onclick="openModal('agriculture-info')">
+                    <h2>Agriculture</h2>
+                    <p>AI in agriculture enhances productivity, efficiency, and sustainability.</p>
+                </div>
+                <div class="scope-box" onclick="openModal('space-info')">
+                    <h2>Space Exploration</h2>
+                    <p>AI helps rovers navigate, analyze data, and make autonomous decisions.</p>
+                </div>
+                <div class="scope-box" onclick="openModal('fashion-info')">
+                    <h2>Fashion Design</h2>
+                    <p>AI creates unique styles by analyzing trends and generating new patterns.</p>
+                </div>
+                <div class="scope-box" onclick="openModal('education-info')">
+                    <h2>Personalized Education</h2>
+                    <p>AI adapts learning content to each student's needs and strengths.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for Scope of AI -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <div id="modal-info"></div>
+            </div>
+        </div>
+
+        <hr> <!-- Separator Line -->
+
+        <!-- Activity Page Section -->
+<section id="activity-page">
+    <h1>Activity Page</h1>
+    <div class="web-chart">
+        <div class="task central-task">Task</div>
+        <div class="task task1" onclick="scrollToContent('task1')">Task 1</div>
+        <div class="task task2" onclick="scrollToContent('task2')">Task 2</div>
+        <div class="task task3" onclick="scrollToContent('task3')">Task 3</div>
+        <div class="task task4" onclick="scrollToContent('task4')">Task 4</div>
+    </div>
+
+    <!-- Task Details (Hidden initially) -->
+    <div class="task-content" id="task1">
+        <h2>Task 1 Details</h2>
+        <p>More information about Task 1...</p>
+    </div>
+    <div class="task-content" id="task2">
+        <h2>Task 2 Details</h2>
+        <p>More information about Task 2...</p>
+    </div>
+    <div class="task-content" id="task3">
+        <h2>Task 3 Details</h2>
+        <p>More information about Task 3...</p>
+    </div>
+    <div class="task-content" id="task4">
+        <h2>Task 4 Details</h2>
+        <p>More information about Task 4...</p>
+    </div>
+</section>
+
+        <hr> <!-- Separator Line -->
+
+        <!-- All Projects Section -->
+        <section id="all-projects">
+            <h1>All Projects</h1>
+            <div class="projects-container">
+                <div class="project-box" onclick="scrollToContent('project1')">
+                    <h2>Project 1</h2>
+                    <p>Basic information about Project 1...</p>
+                </div>
+                <div class="project-box" onclick="scrollToContent('project2')">
+                    <h2>Project 2</h2>
+                    <p>Basic information about Project 2...</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+
+            <!-- Project Details (Hidden initially) -->
+            <div class="project-content" id="project1">
+                <h2>Project 1 Details</h2>
+                <p>More information about Project 1...</p>
+            </div>
+            <div class="project-content" id="project2">
+                <h2>Project 2 Details</h2>
+                <p>More information about Project 2...</p>
+            </div>
+        </section>
+
+        <hr> <!-- Separator Line -->
+
+        <!-- Why Join Us Section -->
+        <section id="why-join-us">
+            <h1>Why Join Us</h1>
+            <div class="why-join-container">
+                <div class="why-join-image">
+                    <img src="your-image.jpg" alt="Join Us Image">
+                </div>
+                <div class="why-join-benefits">
+                    <ul>
+                        <li>Benefit 1: Access to exclusive AI workshops and lectures.</li>
+                        <li>Benefit 2: Networking opportunities with industry experts.</li>
+                        <li>Benefit 3: Hands-on experience with real-world projects.</li>
+                        <li>Benefit 4: Access to AI resources and tools.</li>
+                        <!-- Add more benefits as needed -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
